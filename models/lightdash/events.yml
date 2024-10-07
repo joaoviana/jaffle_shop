@@ -1,0 +1,30 @@
+version: 2
+models:
+  - name: events
+    label: Events
+    description: SQL model for Events
+    columns:
+      - name: event_id
+        meta:
+          dimension:
+            type: number
+      - name: timestamp_tz
+        meta:
+          dimension:
+            type: timestamp
+      - name: timestamp_ntz
+        meta:
+          dimension:
+            type: timestamp
+      - name: timestamp_ltz
+        meta:
+          dimension:
+            type: timestamp
+      - name: date
+        meta:
+          dimension:
+            type: date
+      - name: event
+        meta:
+          dimension:
+            type: string
